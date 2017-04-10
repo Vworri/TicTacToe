@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="TicTacToe.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="TicTacToe.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+</head>
+<body>
+<h1 style="font-size: 70px;" align="center">Tic Tac Toe</h1>
+
+<div id="board"style="display: none">
+
+
+<table align="center" >
+    <th  class="header polaroid">Tick Tack Toe</th>
+    <tr class="row">
+        <td id="1" class="btn  polaroid cell" onclick="">
+            <i  id="1o" class="fa icon fa-circle-o" style=" display:none; font-size: 60px "></i>
+            <i   id="1x" class="fa icon fa-times" style="display:none; font-size: 60px"></i>
+
+        </td>
+        <td id="2" class="btn  polaroid cell ">
+            <i  id="2o" class="fa icon fa-circle-o" style=" display:none; font-size: 60px "></i>
+            <i   id="2x" class="fa icon fa-times" style="display:none; font-size: 60px"></i>
+
+        </td>
+        <td id="3" class="btn polaroid cell">
+            <i  id="3o" class="fa icon icon fa-circle-o" style=" display:none; font-size: 60px "></i>
+            <i   id="3x" class="fa icon fa-times" style="display:none; font-size: 60px"></i>
+
+        </td>
+    </tr>
+    <tr class="row">
+        <td id="4"  class="btn  polaroid cell">
+            <i  id="4o" class="fa icon fa-circle-o" style=" display:none; font-size: 60px "></i>
+            <i   id="4x" class="fa icon fa-times" style="display:none; font-size: 60px"></i>
+
+        </td>
+        <td id="5" class="btn  polaroid cell">
+            <i  id="5o" class="fa icon fa-circle-o" style=" display:none; font-size: 60px "></i>
+            <i   id="5x" class="fa icon fa-times" style="display:none; font-size: 60px"></i>
+
+        </td>
+        <td id="6"  class="btn polaroid cell">
+            <i  id="6o" class="fa icon fa-circle-o" style=" display:none; font-size: 60px "></i>
+            <i   id="6x" class="fa icon fa-times" style="display:none; font-size: 60px"></i>
+
+        </td>
+    </tr>
+    <tr class="row">
+       <td id="7" class="btn polaroid cell" >
+           <i  id="7o" class="fa icon fa-circle-o" style=" display:none; font-size: 60px "></i>
+           <i   id="7x" class="fa icon fa-times" style="display:none; font-size: 60px"></i>
+
+       </td>
+        <td id="8" class="btn polaroid cell">
+            <i  id="8o" class="fa icon fa-circle-o" style=" display:none; font-size: 60px "></i>
+            <i   id="8x" class="fa icon fa-times" style="display:none; font-size: 60px"></i>
+
+        </td>
+        <td id="9" class="btn polaroid cell">
+            <i  id="9o" class="fa icon fa-circle-o" style=" display:none; font-size: 60px "></i>
+            <i   id="9x" class="fa icon fa-times" style="display:none; font-size: 60px"></i>
+
+        </td>
+    </tr>
+</table>
+</div>
+
+<div id="panel">
+    <table>
+    <th  class="header polaroid">Options Panel</th>
+        <form>
+        <tr id="Usrform" class="row" style="margin: 20px">
+            <td class="polaroid" >
+                <h1>Choose Your Letter:</h1>
+                <input id="chooseX" type="radio" class="myCheckbox " value="X"><label>X</label>
+                <input id="chooseO" type="radio" class="myCheckbox " value="O" ><label>O</label>
+            </td>
+
+            <td class="polaroid " style="font-size: 60px">
+                <p>Play Against Human or Against Computer</p>
+                <i  id="Dave" class="btn btn-primary fa fa-odnoklassniki "style="font-size: 70px">Human</i>
+                <i id='Hal' class=" btn btn-primary fa fa-cogs"  style="font-size: 70px">Computer</i>
+                <button id='submitbtn' class="btn-primary" type="submit">Submit</button>
+            </td>
+        </tr></form>
+
+        <tr class="polaroid row" style="margin: 20px">
+            <td class=" " style="font-size: 24px">
+                <h1>Who Won????</h1>
+                <i  class="btn fa fa-circle-o" id="O" style="font-size : 60px; padding-right: 20px; display: none">  Won!  Click here to reset</i>
+                <i class="btn fa fa-times" id="X" style="font-size: 60px; padding-left: 20px ;display: none">  Won! Click here to reset</i>
+            </td>
+        </tr>
+
+
+
+    </table>
+
+</div>
+
+</body>
+</html>
